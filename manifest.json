@@ -1,0 +1,25 @@
+{
+  "name": "PunicaForm",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "host_permissions": ["*://*/*"],
+  "devtools_page": "devtools.html",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "storage",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_start",
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ]
+}

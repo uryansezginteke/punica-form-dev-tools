@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1c2833;
+}
+
+.event {
+  cursor: pointer;
+  color: #ddd;
+  padding: 6px 0 6px 6px;
+  line-height: 160%;
+  font-weight: 500;
+  border-radius: 4px;
+  pointer-events: all;
+  transition: all 0.3s ease;
+}
+
+.event * {
+  pointer-events: none;
+}
+
+.event span {
+  opacity: 0.6;
+}
+
+.event:hover {
+  background-color: #898989;
+  color: #fff;
+}
+
+.event-rule {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-top: 1px solid #5252524d;
+}
+
+.event-is-selected {
+  background-color: #d4d4d4;
+  color: rgb(79, 79, 79);
+  cursor: default;
+  pointer-events: none;
+}
+
+.panel-left-event:hover {
+  color: white;
+}
+
+.content-header {
+  height: 44px;
+  padding: 0 8px 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #525252;
+}
+
+.content-section {
+  height: calc(100vh - 52px);
+  padding: 0 32px 12px 32px;
+  overflow: auto;
+}
+
+.viewer-content-title {
+  color: white;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  color: #ddd;
+  padding: 8px;
+  border: 1px solid #525252;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tab:hover {
+  background-color: #898989;
+  color: #fff;
+}
+
+.tab-is-selected {
+  background-color: #d4d4d4;
+  color: rgb(79, 79, 79);
+  cursor: default;
+  pointer-events: none;
+}

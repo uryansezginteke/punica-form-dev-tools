@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="panel/panel.css" />
+    <link rel="stylesheet" href="panel/jquery/jquery.json-viewer.css" />
+    <link rel="stylesheet" href="panel/jquery/jquery.resizable.css" />
+    <script src="panel/jquery/jquery.js"></script>
+    <script src="panel/jquery/jquery-resizable.js"></script>
+    <script src="panel/jquery/jquery.json-editor.min.js"></script>
+    <script src="panel/util/index.js"></script>
+    <script src="panel/event/index.js"></script>
+    <script src="panel/viewer/index.js"></script>
+    <script src="panel/message/index.js"></script>
+    <script src="panel/tabs/index.js"></script>
+    <script src="panel/panel.js"></script>
+  </head>
+  <body>
+    <div class="panel-container">
+      <div class="panel-left"></div>
+      <div class="splitter"></div>
+      <div class="panel-right">
+        <header class="content-header">
+          <div class="viewer-content-title">PAYLOAD</div>
+          <div class="tabs">
+            <div class="tab" data-message-id="FORM_DATA">FORM DATA</div>
+            <div class="tab" data-message-id="ENTITY">ENTITY</div>
+            <div class="tab" data-message-id="REGISTER_ITEMS">REGISTER ITEMS</div>
+          </div>
+        </header>
+        <section class="content-section">
+          <pre id="json-display"></pre></pre>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
